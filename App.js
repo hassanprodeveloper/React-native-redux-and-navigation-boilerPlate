@@ -8,7 +8,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-import Navigations from './src/Navigation/Navigations'
+import AppDrawer from './src/Navigation/Drawer'
 import {Provider} from 'react-redux'
 import store from './src/redux/store'
 
@@ -16,7 +16,8 @@ const App = () => {
   return (
         <Provider store={store}>
           <StatusBar barStyle="dark-content" />
-          <Navigations />
+          <AppDrawer />
+          
         </Provider>
     );
 };

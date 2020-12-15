@@ -19,10 +19,10 @@ const Welcome = (props) => {
 
   return (
     <View style={styles.appCont}>
-      <WelcomeHeading />
+      <WelcomeHeading text1='React Native' text2=' Boiler Plate' />
     <View style={styles.appContainer}>
       <View>
-        <Text>Welcome {props.user1}</Text>
+        <WelcomeHeading text1='Welcome ' text2={props.user1} />
         <Text>{props.user2.name}</Text>
         <TextInput
           onChangeText={(val) => {setInputData(val)} }

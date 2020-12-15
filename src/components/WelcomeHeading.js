@@ -7,11 +7,11 @@ import {
 } from 'react-native';
 
 
-const WelcomeHeading = () => {
+const WelcomeHeading = ({text1, text2}) => {
   return (
     <SafeAreaView>
         <View style={styles.titleCont}>
-            <Text style={styles.title}>React Native <Text style={styles.titleText}>Redux and Navigation</Text> Boiler-Plate</Text>
+            <Text style={styles.title}>{text1}<Text style={styles.titleText}>{ text2}</Text> </Text>
         </View>
     </SafeAreaView>
     );
